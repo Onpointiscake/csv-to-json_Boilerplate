@@ -46,6 +46,7 @@ function transform(){
         folderNameJSON = 'JSON_CONVERTED'
 
         fs.mkdirSync(folderNameJSON)
+        jsonObj = JSON.stringify(jsonObj)
         fs.writeFileSync(path.join(__dirname, folderNameJSON, 'archivo.json'), jsonObj)
 
     })
